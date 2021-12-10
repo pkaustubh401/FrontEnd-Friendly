@@ -3,10 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
 :root{
-    --red:#44dcc0;
+    --red:#fb5283;
     --light-blue:aqua;
 }
-
 *{
     font-family: 'Nunito', sans-serif;
     margin:0; padding:0;
@@ -26,11 +25,17 @@ html{
 }
 
 body{
-    background:aqua;
+    background:linear-gradient(  #ff3527, #fb5283);
 }
 
 section{
     padding:2rem 9%;
+    width: 100%;
+   
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .btn{
@@ -77,14 +82,13 @@ header{
 }
 
 header .logo{
-    font-weight: bolder;
-    font-size: 2.5rem;
-    color:#333;
+    width: 60px;
+    cursor: pointer;
+    margin: 30px 0;
+
 }
 
-header .logo span{
-    color:var(--red);
-}
+
 
 header .navbar a{
     color:#333;
@@ -93,7 +97,12 @@ header .navbar a{
 }
 
 header .navbar a:hover{
-    color:var(--red);
+        padding: 12px 10px;
+        background: linear-gradient(to right, #fb5283, #ff3527);
+        border-radius: 6px;
+        cursor: pointer;
+        transition: width 0.5s;
+    
 }
 
 header .icons #menu-bars,
@@ -194,37 +203,36 @@ header .icons #menu-bars{
      }
 
      /*
-    
     @media only screen and (max-width: 700px){
 
-        nav ul{
-            width:50%;
-            position: absolute;
-            top: 75px;
-            right: 0;
-            z-index: 2;
-            
-        }
-        nav ul li{
-            padding: 2px 15px;
-            background: transparent;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: width 0.5s;
-            
-        }
-        
-        nav ul li a{
-    
-            color: #fb5283,;
-        }
-        .menu-icon{
-            display: block;   
-        }
-        #menuList{
-            overflow: hidden;
-            transition: 0.5s;
-        }
+        header .icons #menu-bars{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        left:0; right:0; top:100%;
+        background:#f7f7f7;
+        border-top: .1rem solid #333;
+        border-bottom: .1rem solid #333;
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        padding:1.5rem;
+        margin:1.5rem;
+        background:#fff;
+        border:.1rem solid #333;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        border-radius: .5rem;
+    }
+
     div.main{
         flex-direction: column-reverse;
         
@@ -243,6 +251,7 @@ header .icons #menu-bars{
         width: 77%;
     }
 }
+
 
 @media only screen and (max-width: 500px){
 
@@ -292,12 +301,12 @@ div.register::after{
 
 }
 }
-<*/
 
 
 
 
-/* media queries  */
+
+/* media queries  
 @media (max-width:991px){
 
     html{
@@ -352,8 +361,157 @@ div.register::after{
         font-size:50%;
     }
 
-    .contact .row form .inputBox input{
-        width: 100%;
+}
+*/
+
+
+
+
+/* original media quaries*/
+
+@media only screen and (max-width: 800px){
+    html{
+        font-size:55%;
     }
 
+    header{
+        padding:1.5rem 1rem;
+    }
+
+    section{
+        padding:1.5rem;
+    }
+
+    
+    
+div.main{
+    flex-direction: column-reverse;
+    
+    padding-left: 25px;
+    padding-right: 25px;
+    
+    
+}
+  
+div.register{
+    width: 100%;
+    flex-basis: 100%;
+    margin-bottom: 50px auto;
+    
+}
+form#register{
+    width: 77%;
+}
+input#name{
+    width: 77%;
+}
+input#submit{
+    width: 60%;
+}
+}
+
+@media only screen and (max-width: 700px){
+    html{
+        font-size:55%;
+    }
+
+    header{
+        padding:1.5rem 1rem;
+    }
+
+    section{
+        padding:1.5rem;
+    }
+    
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        left:0; right:0; top:100%;
+        background:#f7f7f7;
+        border-top: .1rem solid #333;
+        border-bottom: .1rem solid #333;
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+       header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        padding:1.5rem;
+        margin:1.5rem;
+        background:#fff;
+        border:.1rem solid #333;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        border-radius: .5rem;
+    }
+   
+div.main{
+    flex-direction: column-reverse;
+    padding-left: 25px;
+    padding-right: 25px;
+  
+    
+}
+div.register{
+    width: 100%;
+    flex-basis: 100%;
+    margin-bottom: 50px auto;
+    
+}
+form#register{
+    width: 77%;
+}
+input#name{
+    width: 77%;
+}
+}
+
+@media only screen and (max-width: 500px){
+    html{
+        font-size:55%;
+    }
+
+    header{
+        padding:1.5rem 1rem;
+    }
+
+    section{
+        padding:1.5rem;
+    }
+    
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        left:0; right:0; top:100%;
+        background:#f7f7f7;
+        border-top: .1rem solid #333;
+        border-bottom: .1rem solid #333;
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+   
+div.register{
+    width: 98%;
+    flex-basis: 100%;
+    margin-bottom: 50px auto;
+    
+}
+form#register{
+    width: 77%;
+}
+input#name{
+    width: 77%;
+}
+input#submit{
+    width: 60%;
+}
 }

@@ -3,23 +3,35 @@
 <head>
 <title>Register Form</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="2style.css">
+<link rel="stylesheet" href="style2.css">
 <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+ <!-- font awesome cdn link  -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="navbar">
-        <img src="images/logo.png" class="logo">
-        <nav>
-            <ul id="menuList">
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="">My Work</a></li>
-                <li><a href="">My Skills</a></li>
-                <li><a href="https://www.youtube.com/channel/UC-v_ecEmdB1i5OOJ0xgMPZw" target="_blank">Tutorials</a></li>
-            </ul>
-        </nav>
-        <img src="images/menu icon.png" class="menu-icon" onclick="togglemenu()">
-        </div>
+   <!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo"><span>real</span>Estate</a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#services">services</a>
+        <a href="#featured">featured</a>
+        <a href="#agents">agents</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-bars" class="fas fa-bars"></div>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="hire me.html" target="_blank" class="fas fa-user"></a>
+    </div>
+
+</header>
+
+<!-- header section ends -->
     <div class="main">
         <div class="register">
              <h2>
@@ -75,19 +87,23 @@
         </a>
     </div>
 
-    <script>
-        var menuList= document.getElementById("menuList");
-        menuList.style.maxHeight = "0px";
-        function togglemenu(){
+   <!-- javascript part  -->
+<script>
 
-            if(menuList.style.maxHeight == "0px") {
-                menuList.style.maxHeight = "130px";
-            }
-            else
-            {
-                menuList.style.maxHeight = "0px";
-            }
-        }
-        </script>
+    let menu = document.querySelector('#menu-bars');
+    let navbar = document.querySelector('.navbar');
+    
+    menu.onclick = () =>{
+        navbar.classList.toggle('active');
+        menu.classList.toggle('fa-times');
+    }
+    
+    window.onscroll = () =>{
+        navbar.classList.remove('active');
+        menu.classList.remove('fa-times');
+    }
+    
+    </script>
+        
 </body>
 </html>

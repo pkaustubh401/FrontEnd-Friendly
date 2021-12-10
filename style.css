@@ -198,7 +198,7 @@ header .icons #menu-bars{
     font-size: 5rem;
     text-align: center;
     color: #333;
-    padding: 1rem;
+    padding: 5rem;
     position: relative;
     
 }
@@ -206,12 +206,13 @@ header .icons #menu-bars{
 .header:after{
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: 10;
     left: 50%;
     transform: translateX(-50%);
     height: 4px;
     width: 31rem;
     background-color: #ff54a2;
+    border-radius: 2px;
 }
 
 .container{
@@ -370,7 +371,14 @@ header .icons #menu-bars{
         top: 8px;
     }
     
-
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+    }
+    .skill-icon{
+        width: 500px;
+    
+    }
     
 
 }
@@ -405,6 +413,16 @@ header .icons #menu-bars{
         border-radius: .5rem;
     }
 
+    .container{
+        grid-template-columns: 1fr;
+        padding: 2rem 50px;
+    }
+
+    .skill-icon{
+        width: 450px;
+    
+    }
+
 }
 
 @media (max-width:450px){
@@ -415,8 +433,17 @@ header .icons #menu-bars{
 
     .contact .row form .inputBox input{
         width: 100%;
+    }  
+     
+    .container{
+        grid-template-columns: 1fr;
+        padding: 2rem 50px;
     }
 
+    .skill-icon{
+        width: 300px;
+    
+    }
 }
 
 

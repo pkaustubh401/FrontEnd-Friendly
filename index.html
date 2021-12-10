@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Wasim Shaikh</title>
+       <link rel="stylesheet" href="style.css"> 
+       
+       
+    </head>
+    <body>
+        
+        <div class="container">
+         <div class="navbar">
+            <img src="images/logo.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="">My Work</a></li>
+                    <li><a href="">My Skills</a></li>
+                    <li><a href="https://www.youtube.com/channel/UC-v_ecEmdB1i5OOJ0xgMPZw" target="_blank">Tutorials</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu icon.png" class="menu-icon" onclick="togglemenu()">
+          </div>
+        
+            <div class="row">
+                <div class="col-1">
+                    <h2>Hello<br>I am Wasim Shaikh</h2>
+                 <h2>a Web Designer</h2>
+                 <br>
+                 <a href="Hire me.html" target="_blank">Hire Me
+                 </a>
+                </div>
+                <div class="col-2">
+                    <img src="images/wasim.png" class="controller">
+                    <div class="color-box">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="social-links">
+                <img src="images/fb icon.png">
+            <a href="https://www.instagram.com/beanie_boy_live/" target="blank">
+                <img src="images/insta icon.png"></a>
+                <a href="https://www.youtube.com/channel/UC-v_ecEmdB1i5OOJ0xgMPZw" target="blank">
+                <img src="images/youtube.png">
+                </a>
+            </div>
+
+        </div>
+
+        <script>
+            var menuList= document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+            function togglemenu(){
+
+                if(menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "130px";
+                }
+                else
+                {
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    </body>
+</html>

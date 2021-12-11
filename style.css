@@ -173,6 +173,7 @@ header .icons #menu-bars{
 }
 .col-2 .controller{
     width: 90%;
+    
 }
 
 .color-box{
@@ -348,10 +349,19 @@ header .icons #menu-bars{
         flex-basis: 100%;
         margin-bottom: 50px;
     }
-    .col-2 .controller{
-        
-    }
+
+   
     .color-box{
+            position: absolute;
+            right: 0;
+            top: 17px;
+            background: linear-gradient(#ff54a2, #ff575a);
+            border-radius: 20px 0 0 20px;
+            height: 100%;
+            width: 80%;
+            z-index: -1;
+            transform: translate(150px);
+    
         transform: translate(75px);
     }
     .col-1{
@@ -415,6 +425,7 @@ header .icons #menu-bars{
         border-radius: .5rem;
     }
 
+    
     .container{
         grid-template-columns: 1fr;
         padding: 2rem 50px;

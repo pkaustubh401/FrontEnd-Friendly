@@ -243,7 +243,9 @@ header .icons #menu-bars{
 .skill-title h3{
      color: black;
      margin: 0.5rem;
+     font-size: large;
 }
+
 .skill-icon{
     width: 500px;
 

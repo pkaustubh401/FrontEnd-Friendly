@@ -352,16 +352,6 @@ header .icons #menu-bars{
 
    
     .color-box{
-            position: absolute;
-            right: 0;
-            top: 17px;
-            background: linear-gradient(#ff54a2, #ff575a);
-            border-radius: 20px 0 0 20px;
-            height: 100%;
-            width: 80%;
-            z-index: -1;
-            transform: translate(150px);
-    
         transform: translate(75px);
     }
     .col-1{

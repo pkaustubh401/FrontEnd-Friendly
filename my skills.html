@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Wasim Shaikh</title>
+       <link rel="stylesheet" href="my skills.css"> 
+       <link rel="icon" href="logo.png" type="image/x-icon">
+       <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+ <!-- font awesome cdn link  -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+   <!-- header section starts  -->
+
+<header>
+<nav class="navbar">
+        <a href="index.html">home</a> </a>
+        <a href="my skills.html">My Skills</a>
+        <a href="#My Works">My Works</a>
+        <a href="https://www.youtube.com/channel/UC-v_ecEmdB1i5OOJ0xgMPZw" target="_blank">Tutorials</a>
+       
+    </nav>
+
+    <div class="icons">
+        <div id="menu-bars" class="fas fa-bars"></div>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="index2.html" target="_blank" class="fas fa-user"></a>
+    </div>
+
+</header>
+
+ <!-- My skills section starts here -->
+
+ <section class="My Skills" id="My Skills">
+    <div class="inner">
+        <div class="header">
+            <h1>My Skills</h1>
+        </div>
+        <div class="container">
+            <div class="skill-box">
+                <div class="skill-title">
+                <div class="img">
+                    <img src="images/html icon.png" class="skill-icon">
+                </div>
+                <h3>HTML 5</h3>
+            </div>
+            
+        </div>
+        <div class="skill-box">
+          <div class="skill-title">
+          <div class="img">
+          
+              <img src="images/css-icon.png" class="skill-icon">
+          </div>
+          <h3>CSS 3</h3>
+      </div>
+  </div>
+  <div class="skill-box">
+      <div class="skill-title">
+      <div class="img">
+          <img src="images/js icon.png" class="skill-icon">
+      </div>
+      <h3>JavaScript</h3>
+  </div>
+  
+</div>
+</div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<div>
+    <div class="social-links">
+        <a href="https://github.com/Beaineboy" target="_blank">
+        <img src="images/github icon.png"></a>
+    <a href="https://www.instagram.com/beanie_boy_live/" target="blank">
+        <img src="images/insta icon.png"></a>
+        <a href="https://www.youtube.com/channel/UC-v_ecEmdB1i5OOJ0xgMPZw" target="blank">
+        <img src="images/youtube.png">
+        </a>
+    </div>
+
+</div>
+ 
+
+<!-- javascript part  -->
+<script>
+
+let menu = document.querySelector('#menu-bars');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () =>{
+navbar.classList.toggle('active');
+menu.classList.toggle('fa-times');
+}
+
+window.onscroll = () =>{
+navbar.classList.remove('active');
+menu.classList.remove('fa-times');
+}
+
+</script>
+</body>
+
+</html>

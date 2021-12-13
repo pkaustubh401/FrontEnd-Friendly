@@ -1,4 +1,4 @@
- *{
+*{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -132,67 +132,10 @@ header .icons #menu-bars{
 }
 /* heeader css ends here*/
 
-/* home css starts here*/
-.row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 100px 0;
-}
-
-.col-1{
-    flex-basis: 40%;
-    position: relative;
-    margin-left: 50px;
-}
-.col-1 h2{
-    font-size: 54px;
-}
-.col-1 h{
-    font-size: 30px;
-    color: #707070;
-    font-weight: 100;
-    margin: 20px 0 10px;
-}
-
-
-.col-1::after{
-    content: '';
-    width: 10px;
-    height: 90%;
-    background: linear-gradient(#ff469f, #ff6062);
-    position: absolute;
-    left: -40px;
-    top: 8px;
-}
-.col-2{
-    position: relative;
-    flex-basis: 60%;
-    display: flex;
-    align-items: center;
-}
-.col-2 .controller{
-    width: 90%;
-    
-}
-
-.color-box{
-    position: absolute;
-    right: 0;
-    top: 0;
-    background: linear-gradient(#ff54a2, #ff575a);
-    border-radius: 20px 0 0 20px;
-    height: 100%;
-    width: 80%;
-    z-index: -1;
-    transform: translate(150px);
-}
-/* home css end here*/
-
-/* my skills css starts here*
+/* my skills css starts here*/
 
 .inner{
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 .header{
@@ -263,74 +206,8 @@ header .icons #menu-bars{
     text-align: center;
     padding-bottom: 0%;
 }
-/* social link css starts here*/
 
 
-/*hire me ends here*/
-/*
-@media only screen and (max-width: 700px){
-    
-    header .icons #menu-bars{
-        display: inline-block;
-    }
-
-    header .navbar{
-        position: absolute;
-        left:0; right:0; top:100%;
-        background:#f7f7f7;
-        border-top: .1rem solid #333;
-        border-bottom: .1rem solid #333;
-        transition: .2s linear;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    header .navbar.active{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-
-    header .navbar a{
-        display: block;
-        padding:1.5rem;
-        margin:1.5rem;
-        background:#fff;
-        border:.1rem solid #333;
-        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-        border-radius: .5rem;
-    }
-    .row{
-        flex-direction: column-reverse;
-        margin: 50px 0;
-    }
-    .col-2{
-        flex-basis: 100%;
-        margin-bottom: 50px;
-    }
-    .col-2 .controller{
-        width: 77%;
-    }
-    .color-box{
-        transform: translate(75px);
-    }
-    .col-1{
-        flex-basis: 100%;
-    }
-    .col-1 h2{
-        font-size: 25px;
-    }
-    .col-1 h3{
-        font-size: 15px;
-    }
-    .col-1::after{
-        content: '';
-        width: 10px;
-        height: 60%;
-        background: linear-gradient(#ff469f, #ff6062);
-        position: absolute;
-        left: -40px;
-        top: 8px;
-    }
-}
-*/
 
 @media (max-width:800px){
 
@@ -449,37 +326,3 @@ header .icons #menu-bars{
     
     }
 }
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

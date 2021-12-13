@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --red:#fb5283;
+    --light-blue:aqua;
+}
+*{
+   
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    
+}
+
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background:#fff;
+    
+}
+
+section{
+     width: 100%;
+   
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* heeader css starts here*/
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3.5rem;
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    color:var(--blue);
+    background:var(--light-blue);
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover{
+    background:var(--blue);
+    color:#44dcd4;
+}
+    
+.heading{
+    text-align: center;
+    color:#333;
+    font-size: 4rem;
+    padding-bottom: 3rem;
+}
+
+.heading span{
+    color:var(--red);
+    background:var(--light-red);
+    border-radius: .5rem;
+    padding:.2rem 1.5rem;
+}
+
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+    background:#fff;
+    padding:1.5rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    width: 60px;
+    cursor: pointer;
+    margin: 30px 0;
+
+}
+
+
+
+header .navbar a{
+    color:#333;
+    font-size: 2rem;
+    padding:0 1.5rem;
+}
+
+header .navbar a:hover{
+    padding: 12px 10px;
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+
+header .icons #menu-bars,
+header .icons a{
+    height:4.5rem;
+    line-height: 4.5rem;
+    width:5rem;
+    font-size: 2rem;
+    margin-right: .5rem;
+    border-radius: .5rem;
+    color:var(--red);
+    background:var(--light-red);
+    text-align: center;
+}
+
+header .icons #menu-bars:hover,
+header .icons a:hover{
+    background-color:var(--red);
+    color:#fff;
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+/* heeader css ends here*/
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 5%;
+  }
+  
+/*projects*/
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7.5rem;
+    margin: 2rem 0;
+  }
+  
+  .preview {
+    width: 100%;
+    margin: auto;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    
+  }
+  
+  .preview img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0.9;
+   
+  }
+  
+  .preview img:hover {
+    opacity: 1;
+  }
+  
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem 0;
+    font-family: "Roboto", sans-serif;
+    color: black;
+  }
+  
+  .title {
+    color: #1498a4;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .title a {
+    color: #1498a4;
+    text-decoration: none;
+    transition: all 0.5s ease;
+  }
+  
+  .title a:hover {
+    font-size: 2.1rem;
+  }
+  
+  .footer {
+    font-family: "Roboto", sans-serif;
+    color: #fefefe;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0 0 40px 0;
+  }
+  
+  .footer:hover {
+    color: #1498a4;
+  }
+
+  @media screen and (min-width: 450px) {
+    body {
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 650px) {
+    body {
+      font-size: 24px;
+    }
+  
+    .project {
+      flex-direction: row;
+    }
+  
+    .info {
+      padding: 0 0 0 1.5rem;
+      align-items: flex-start;
+      width: 65%;
+    }
+  
+    .preview {
+      width: 35%;
+    }
+
+    
+  }
+
+
+  /* social link css start here */
+  .social-links img{
+    height: 35px;
+    margin: 30px;
+    cursor: pointer;
+   }
+   .social-links{
+   text-align: center;
+   
+ }
+  
+  
+/*social links css*/  
+
+
+
+
+@media (max-width:800px){
+
+    html{
+        font-size:55%;
+    }
+
+    header{
+        padding:1.5rem 1rem;
+    }
+
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-2{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+
+   
+    .color-box{
+        transform: translate(75px);
+    }
+    .col-1{
+        flex-basis: 100%;
+    }
+    .col-1 h2{
+        font-size: 25px;
+    }
+    .col-1 h3{
+        font-size: 15px;
+    }
+    .col-1::after{
+        content: '';
+        width: 10px;
+        height: 88%;
+        background: linear-gradient(#ff469f, #ff6062);
+        position: absolute;
+        left: -40px;
+        top: 8px;
+    }
+    
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+    }
+    .skill-icon{
+        width: 500px;
+    
+    }
+    
+    
+
+}
+
+@media (max-width:768px){
+
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        left:0; right:0; top:100%;
+        background:#f7f7f7;
+        border-top: .1rem solid #333;
+        border-bottom: .1rem solid #333;
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        padding:1.5rem;
+        margin:1.5rem;
+        background:#fff;
+        border:.1rem solid #333;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        border-radius: .5rem;
+    }
+
+    
+    .container{
+        grid-template-columns: 1fr;
+        padding: 2rem 50px;
+    }
+
+    .skill-icon{
+        width: 450px;
+    
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size:50%;
+    }
+
+    .contact .row form .inputBox input{
+        width: 100%;
+    }  
+     
+    .container{
+        grid-template-columns: 1fr;
+        padding: 2rem 50px;
+    }
+
+    .skill-icon{
+        width: 300px;
+    
+    }
+   
+}
